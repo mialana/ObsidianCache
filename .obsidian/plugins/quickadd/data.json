@@ -36,7 +36,7 @@
             "folder": {
               "enabled": true,
               "folders": [
-                "content/project/{{name}}"
+                "content/projects/{{name}}"
               ],
               "chooseWhenCreatingNote": false,
               "createInSameFolderAsActiveFile": false,
@@ -53,6 +53,12 @@
             "fileExistsMode": "Increment the file name",
             "setFileExistsBehavior": false
           }
+        },
+        {
+          "name": "Files: Create new folder",
+          "type": "Obsidian",
+          "id": "6d6b4fd7-c175-4472-9035-223bd26ed03a",
+          "commandId": "file-explorer:new-folder"
         }
       ],
       "runOnStartup": false

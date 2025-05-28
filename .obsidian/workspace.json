@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "25fee5a0a888dedf",
+        "id": "464cad109fc328ea",
         "type": "tabs",
         "children": [
           {
-            "id": "927f1fb492abb458",
+            "id": "b021343898c41a41",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/project/Neural-for-USD/Neural-for-USD.md",
+                "file": "Templates/project-template.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Neural-for-USD"
+              "title": "project-template"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 235.5
   },
   "right": {
     "id": "ad89936ab6c00db4",
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Welcome.md",
+                "file": "content/projects/USD-Asset-Browser/USD-Asset-Browser.mdx",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Welcome"
+              "title": "Outgoing links from USD-Asset-Browser"
             }
           },
           {
@@ -143,21 +143,44 @@
               "type": "outline",
               "state": {
                 "file": "Templates/project-template.md",
-                "followCursor": false,
+                "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
               "title": "Outline of project-template"
             }
+          },
+          {
+            "id": "3516a4886cdce222",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "4e1e32900b764af7",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -168,46 +191,54 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "publish:Publish changes...": false,
+      "edit-mdx:New .mdx file": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "927f1fb492abb458",
+  "active": "b021343898c41a41",
   "lastOpenFiles": [
-    "content/project/Neural-for-USD/Neural-for-USD.md",
-    "content/project/Neural-for-USD",
+    "content/projects/USD-Asset-Browser/USD-Asset-Browser.mdx",
+    "content/projects/USD-Asset-Browser/metadata.md",
     "Templates/project-template.md",
+    "content/projects/USD-Asset-Browser/assets/Flattened_Asset_Layer.png",
+    "content/projects/Neural-for-USD/Neural-for-USD.mdx",
+    "content/projects/Mini-Minecraft/Mini-Minecraft.mdx",
+    "content/projects/Mini-Minecraft",
+    "content/projects/USD-Asset-Browser/USD-Asset-Browser.md",
+    "content/projects/Neural-for-USD/Neural-for-USD.md",
+    "content/projects/USD-Asset-Browser/assets",
+    "content/projects/USD-Asset-Browser",
+    "content/projects/Neural-for-USD",
+    "content/projects",
+    "content/project/MiniMaya/assets/temp.png",
+    "content/project/MiniMinecraft/MiniMinecraft.md",
+    "content/project/MiniMaya/assets",
+    "content/project/MiniMaya/MiniMaya.mdx",
+    "content/projects/tester/tester.md",
+    "content/projects/Mini-Minecraft/Mini-Minecraft.md",
+    "content/project/Mini-Minecraft/Mini-Minecraft.md",
+    "content/project/USD-Asset-Browser/USD-Asset-Browser.md",
+    "content/project/USD-Asset-Browser/assets/Flattened_Asset_Layer.png",
+    "content/project/Neural-for-USD/Neural-for-USD.md",
+    "content/blog/yellow-wallpaper/index.md",
+    "content/blog/sleep-hollow/index.md",
+    "content/blog/metamorphosis/metamorphosis.jpg",
+    "content/blog/metamorphosis/index.md",
+    "content/blog/markdown-syntax-example/x-wing.jpeg",
+    "content/blog/markdown-syntax-example/index.md",
+    "content/blog/alice-in-wonderland/index.md",
+    "content/projects/thirty-six-questions/index.md",
+    "content/projects/superwebthemes/index.md",
+    "content/projects/classless-css/index.md",
+    "content/projects/astro-micro/index.md",
+    "Lists/Hackathons.md",
     "content/project/test/test.md",
     "Templates/project-template 2.md",
-    "content/project/test",
     "content/project/work/work.md",
-    "content/project/work",
     "content/project/new/new.md",
-    "content/project/new",
     "content/project/testing/testing.md",
-    "content/project/testing",
-    "content/project/tester/tester.md",
-    "content/project/tester",
-    "content/project/another/another.md",
-    "content/project/another",
-    "content/project/drive/drive.md",
-    "content/project/drive",
-    "content/project/neural/neural.md",
-    "content/project/neural",
-    "content/Templates/project-template.md",
-    "content/Templates",
-    "content/project/proj/proj.md",
-    "Templates/project-template 1.md",
-    "content/project/test/test1.md",
-    "content/project/min/min.md",
-    "content/project/ne/ne.md",
-    "content/project/Test/Test.md",
-    "content/project/Neural/Neural.md",
-    "content/project/neural/neural1.md",
-    "content/project/Neural/neural1.md",
-    "content/project/mine/mine.md",
-    "content/project/last/last.md",
-    "Templates/project-template.save.md",
-    "content/project/Neural-for/Neural-for.md",
     "Untitled.canvas",
     "CIS 4610/Untitled.canvas"
   ]

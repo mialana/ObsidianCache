@@ -1,6 +1,6 @@
 <%*
-function deslugify(name) {return name.replace(/-/g, " ");}
-const title = deslugify("{{NAME}}");
+function slugify(name) {return name.toLowerCase().replace(" ", /-/g);}
+const slug = slugify("{{NAME}}");
 
 const techStack = [];
 
@@ -30,18 +30,25 @@ while (true) {
 
 tagsStr = tags.map(t => `"${t}"`).join(", ");
 -%>
-
 ---
-title: "<%* tR += title; %>"
+title: {{NAME}}
 startDate: "{{VDATE:startDate, MMMM YYYY}}"
 endDate: "{{VDATE:endDate, MMMM YYYY}}"
-description: "This project is about <%* tR += title; %>"
+demoVideoLink: "{{VALUE:demoVideoLink}}"
 techStack: [
 	<%* tR += techStackStr; %>
 ]
 tags: [
 	<%* tR += tagsStr; %>
 ]
-slug: {{NAME}}
+slug: "<%* tR += slug; %>"
 
 ---
+
+## Summary
+
+## Motivation
+
+## Next Steps
+
+## References

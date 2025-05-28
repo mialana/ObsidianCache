@@ -1,5 +1,7 @@
 [
   "quickadd",
   "templater-obsidian",
-  "nldates-obsidian"
+  "nldates-obsidian",
+  "edit-mdx",
+  "obsidian-git"
 ]
