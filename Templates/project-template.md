@@ -1,8 +1,15 @@
 <%*
-const slug = "{{VALUE:Slug}}";
-const title = tp.user.deslugify(slug);
+const title = "{{VALUE:Title}}";
+const slug  = tp.user.slugify(title);
+
+const baseDir = `./content/projects/${slug}`;
+
+await tp.file.move(`${baseDir}/${slug}`);
 // Create assets directory for this project  
-await tp.user.makedir({ OBSIDIAN_ASSETS_DIR: `./content/projects/${slug}/assets` });
+await tp.user.makedir({ OBSIDIAN_MAKEDIR: `${baseDir}/assets` });
+
+const file = tp.file.find_tfile(`${baseDir}/${slug}`);
+app.workspace.getLeaf("tab").openFile(file);
 
 // ----- basic frontmatter fields -----  
 const type = await tp.system.suggester(x => x, ["individual", "group"], false, "Type?");  
@@ -36,7 +43,7 @@ if (endDateYear != endDateYear) include.push(endDateYear);
 
 // ----- tag picker (includes the two years) -----  
 const tagsArr = await tp.user.suggestTags(tp, { include: include });  
-const tagsStr = tagsArr.map(t => `"${t}"`).join(", ");  
+const tagsStr = tagsArr.map(t => `"${t}"`).join(", ");
 _%>
 
 ---

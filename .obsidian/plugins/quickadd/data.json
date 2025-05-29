@@ -44,7 +44,7 @@
         {
           "name": "Close this tab group",
           "type": "Obsidian",
-          "id": "22d5416d-3533-469a-ba36-f72495639bb1",
+          "id": "d3cdabe8-aa68-4a16-a364-26b0faf6838e",
           "commandId": "workspace:close-tab-group"
         },
         {
@@ -59,28 +59,32 @@
             "templatePath": "Templates/project-template.md",
             "fileNameFormat": {
               "enabled": true,
-              "format": "{{VALUE:Slug}}"
+              "format": "{{VALUE:Title}}"
             },
             "folder": {
-              "enabled": true,
-              "folders": [
-                "content/projects/{{VALUE:Slug}}"
-              ],
+              "enabled": false,
+              "folders": [],
               "chooseWhenCreatingNote": false,
               "createInSameFolderAsActiveFile": false,
               "chooseFromSubfolders": false
             },
             "appendLink": false,
             "openFileInNewTab": {
-              "enabled": false,
+              "enabled": true,
               "direction": "vertical",
-              "focus": true
+              "focus": false
             },
-            "openFile": true,
+            "openFile": false,
             "openFileInMode": "default",
             "fileExistsMode": "Increment the file name",
             "setFileExistsBehavior": false
           }
+        },
+        {
+          "name": "Navigate back",
+          "type": "Obsidian",
+          "id": "2ad5ea69-9d19-47e6-92cb-017d4cfa7677",
+          "commandId": "app:go-back"
         }
       ],
       "runOnStartup": false
