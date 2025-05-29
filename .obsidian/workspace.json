@@ -11,10 +11,14 @@
             "id": "ddda338efca46e64",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "content/projects/USD-Asset-Browser/PAPAYA---USD-Asset-Browser.md",
+                "mode": "source",
+                "source": true
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "PAPAYA---USD-Asset-Browser"
             }
           }
         ]
@@ -204,8 +208,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4e1e32900b764af7",
+  "active": "ddda338efca46e64",
   "lastOpenFiles": [
+    "Templates/project-template.md",
+    "Templates/post-template.md",
+    "content/projects/USD-Asset-Browser/PAPAYA---USD-Asset-Browser.md",
     "content/projects/a1/a1.md",
     "content/projects/a1/assets",
     "content/posts/oct/oct.md",
@@ -227,13 +234,11 @@
     "content/projects/Diff",
     "./content/projects/Diff/Diff.md",
     "content/projects/Last/assets",
-    "content/projects/USD-Asset-Browser/USD-Asset-Browser.md",
     "./content/projects/Last/Last.md",
     "content/projects/ne/ne.md",
     "./content/projects/a/a.md",
     "content/projects/na/na.md",
     "./content/projects/ne/ne.md",
-    "Templates/project-template.md",
     "./content/projects/na/na.md",
     "content/projects/New/New.md",
     "./content/projects/New/New.md",
