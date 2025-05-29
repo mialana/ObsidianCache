@@ -13,6 +13,13 @@
       "type": "Macro",
       "command": true,
       "macroId": "68d80a7b-6277-4238-827f-7d5f9181d09c"
+    },
+    {
+      "id": "b8a205ec-b0b4-4d0e-a59b-7ae22d5ac308",
+      "name": "New",
+      "type": "Macro",
+      "command": true,
+      "macroId": "a7fbfbbd-9cf4-49e9-9e9e-6dadec1ded56"
     }
   ],
   "macros": [
@@ -79,6 +86,13 @@
           "commandId": "workspace:close-tab-group"
         },
         {
+          "name": "quickAddOpenPost",
+          "type": "UserScript",
+          "id": "ee38b7c6-5619-4c92-84b2-e9125d94cf26",
+          "path": "Scripts/quickAddOpenPost.js",
+          "settings": {}
+        },
+        {
           "name": "CHOICE: Post Page",
           "type": "NestedChoice",
           "id": "bc6fc711-8aff-494d-9fe1-81f88294b917",
@@ -110,12 +124,20 @@
             "fileExistsMode": "Increment the file name",
             "setFileExistsBehavior": false
           }
-        },
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "New",
+      "id": "a7fbfbbd-9cf4-49e9-9e9e-6dadec1ded56",
+      "commands": [
         {
-          "name": "Navigate back",
-          "type": "Obsidian",
-          "id": "2ad5ea69-9d19-47e6-92cb-017d4cfa7677",
-          "commandId": "app:go-back"
+          "name": "CreateNewPost",
+          "type": "UserScript",
+          "id": "9ef9ec13-ef7f-446e-856c-10363fa18aad",
+          "path": "Scripts/CreateNewPost.js",
+          "settings": {}
         }
       ],
       "runOnStartup": false

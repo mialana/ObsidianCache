@@ -1,18 +1,18 @@
 {
   "command_timeout": 5,
-  "templates_folder": "",
+  "templates_folder": "Templates",
   "templates_pairs": [
     [
       "makedir",
       "mkdir $OBSIDIAN_MAKEDIR"
     ]
   ],
-  "trigger_on_file_creation": false,
+  "trigger_on_file_creation": true,
   "auto_jump_to_cursor": false,
   "enable_system_commands": true,
   "shell_path": "",
   "user_scripts_folder": "Scripts",
-  "enable_folder_templates": true,
+  "enable_folder_templates": false,
   "folder_templates": [
     {
       "folder": "",
