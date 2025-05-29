@@ -1,15 +1,5 @@
 <%*
-const title = "{{VALUE:Title}}";
-const slug  = tp.user.slugify(title);
-
-const baseDir = `./content/projects/${slug}`;
-
-await tp.file.move(`${baseDir}/${slug}`);
-// Create assets directory for this project  
-await tp.user.makedir({ OBSIDIAN_MAKEDIR: `${baseDir}/assets` });
-
-const file = tp.file.find_tfile(`${baseDir}/${slug}`);
-app.workspace.getLeaf("tab").openFile(file);
+const {title, slug} = await tp.user.setup(tp, "projects");
 
 // ----- basic frontmatter fields -----  
 const type = await tp.system.suggester(x => x, ["individual", "group"], false, "Type?");  
@@ -29,17 +19,23 @@ const techStack = techStackRaw.map(tp.user.tagify);
 const techStackStr = techStack.map(t => `"${t}"`).join(", ");
 
 // ----- dates & auto‑generated year tags -----  
-let startDate = "{{VDATE:StartDate, MMMM YYYY}}";
-if (startDate == "Invalid date") startDate = "{{DATE:MMMM YYYY}}";
+// Prompt the user with natural-language date input
+let startRaw = await tp.system.prompt('Start Date? (format: MONTH YEAR, e.g. "October 2021, 10/2021, 10 2021, 10-2021")');
+let endRaw   = await tp.system.prompt('End Date? (format: MONTH YEAR, e.g. "October 2021, 10/2021, 10 2021, 10-2021")');
 
-let endDate = "{{VDATE:EndDate, MMMM YYYY}}";
-if (endDate == "Invalid date") endDate = "{{DATE:MMMM YYYY}}";
+// Fallbacks if user enters nothing
+if (!startRaw?.trim()) startRaw = "May 2025";
+if (!endRaw?.trim()) endRaw   = "May 2025";
+
+// Parse using moment
+const startDate = moment(startRaw).format("MMMM YYYY");
+const endDate   = moment(endRaw).format("MMMM YYYY");
 
 const startDateYear = tp.date.now("YYYY", 0, startDate,"MMMM YYYY");
 const endDateYear = tp.date.now("YYYY", 0, startDate, "MMMM YYYY");
 
 let include = [startDateYear];
-if (endDateYear != endDateYear) include.push(endDateYear);
+if (endDateYear != startDateYear) include.push(endDateYear);
 
 // ----- tag picker (includes the two years) -----  
 const tagsArr = await tp.user.suggestTags(tp, { include: include });  

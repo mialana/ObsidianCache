@@ -20,8 +20,51 @@
               "icon": "lucide-file",
               "title": "project-template"
             }
+          },
+          {
+            "id": "b8c14441315c877f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Templates/project-template.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "project-template"
+            }
+          },
+          {
+            "id": "f1f8a0f697b0acc3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Templates/project-template.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "project-template"
+            }
+          },
+          {
+            "id": "94bcb78e0bdaa6e2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Templates/project-template.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "project-template"
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -208,44 +251,43 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a9887206d5df5de0",
+  "active": "94bcb78e0bdaa6e2",
   "lastOpenFiles": [
-    "content/posts/newest/newest.md",
+    "content/projects/proj/proj.md",
+    "content/projects/proj/assets",
+    "Templates/project-template.md",
+    "content/projects/proj",
+    "./content/projects/proj/proj.md",
+    "content/posts/ma/ma.md",
     "Templates/post-template.md",
-    "content/posts/newest",
+    "content/posts/ma",
+    "./content/posts/ma/ma.md",
+    "content/projects/USD-Asset-Browser/USD-Asset-Browser.md",
+    "content/posts/test/test.md",
+    "content/posts/test",
+    "./content/posts/test/test.md",
+    "Users/Dev/Documents/Obsidian/amyliu.dev/content/posts/e/e.md",
+    "Users/Dev/Documents/Obsidian/amyliu.dev/content/posts/e",
+    "Users/Dev/Documents/Obsidian/amyliu.dev/content/posts",
+    "Users/Dev/Documents/Obsidian/amyliu.dev/content",
+    "Users/Dev/Documents/Obsidian/amyliu.dev",
+    "Users/Dev/Documents/Obsidian",
+    "Users/Dev/Documents",
+    "Users/Dev/Documents/Obsidian/amyliu.dev/content/posts/es/es.md",
+    "Users/Dev/Documents/Obsidian/amyliu.dev/content/projects/New/New.md",
+    "Users/Dev/Documents/Obsidian/amyliu.dev/content/projects/New-Project/New-Project.md",
+    "Users/Dev/Documents/Obsidian/amyliu.dev/content/projects/make/make.md",
+    "Users/Dev/Documents/Obsidian/amyliu.dev/content/projects/new/new.md",
+    "Users/Dev/Documents/Obsidian/amyliu.dev/content/projects/new-proje/new-proje.md",
+    "content/projects/Omniverse-ComfyUI-Plugin/Omniverse-ComfyUI-Plugin.md",
+    "Users/Dev/Documents/Obsidian/amyliu.dev/content/projects/Pro/Pro.md",
+    "./content/projects/Test/Test.md",
+    "content/projects/New-Project/New-Project.md",
+    "./content/projects/New-Project/New-Project.md",
+    "content/posts/newest/newest.md",
     "./content/posts/newest/newest.md",
     "content/posts/new-post/new-post.md",
-    "content/posts/new-post",
     "./content/posts/new-post/new-post.md",
-    "Scripts/cleanup.js",
-    "content/posts/k/k.md",
-    "content/posts/k",
-    "./content/posts/k/k.md",
-    "content/posts/work/work.md",
-    "content/posts/work",
-    "./content/posts/work/work.md",
-    "content/posts/new/new.md",
-    "content/posts/new",
-    "./content/posts/new/new.md",
-    "content/posts/j/j.md",
-    "content/posts/j",
-    "./content/posts/j/j.md",
-    "./content/posts/d/d.md",
-    "content/posts/d/d.md",
-    "content/posts/d",
-    "./content/posts/will/will.md",
-    "content/posts/will/will.md",
-    "content/posts/will",
-    "./content/posts/new/new.md",
-    "content/posts/kw/kw.md",
-    "content/posts/kw",
-    "./content/posts/kw/kw.md",
-    "./content/posts/new-post/new-post.md",
-    "content/posts/ls/ls.md",
-    "Templates/project-template.md",
-    "./content/posts/title/title.md",
-    "content/posts/title/title.md",
-    "./content/posts/ls/ls.md",
     "content/projects/USD-Asset-Browser/assets/Flattened_Asset_Layer.png",
     "content/project/MiniMaya/assets/temp.png",
     "content/project/USD-Asset-Browser/assets/Flattened_Asset_Layer.png",

@@ -6,8 +6,6 @@ const creationDate = tp.date.now("YYYY-MM-DD HH:mm:ss");
 
 const tagsArr = await tp.user.suggestTags(tp);
 const tagsStr = tagsArr.map(t => `"${t}"`).join(", ");
-
-tp.user.cleanup(tp);
 -%>
 
 ---
