@@ -1,6 +1,25 @@
 <%*
 const {title, slug} = await tp.user.setup(tp, "projects");
 
+// Prompt the user with natural-language date input
+let startRaw = await tp.system.prompt("Start Date? (format: MM YYYY)");
+if (!startRaw?.trim() || startRaw == "Invalid date") startRaw = "May 2025";
+// Parse using moment
+const startDate = moment(startRaw, "MM YYYY").format("MMMM YYYY");
+
+let endRaw   = await tp.system.prompt("End Date? (format: MM YYYY)");
+if (!endRaw?.trim() || endRaw == "Invalid date") endRaw = "May 2025";
+const endDate = await moment(endRaw, "MM YYYY").format("MMMM YYYY");
+
+console.log(startDate);
+console.log(endDate);
+// ----- dates & auto‑generated year tags ---
+const startDateYear = moment(startDate, "MMMM YYYY").format("YYYY");
+const endDateYear   = moment(endDate,   "MMMM YYYY").format("YYYY");
+
+let include = [startDateYear];
+if (endDateYear != startDateYear) include.push(endDateYear);
+
 // ----- basic frontmatter fields -----  
 const type = await tp.system.suggester(x => x, ["individual", "group"], false, "Type?");  
 const category = await tp.system.suggester(x => x, ["personal", "school", "internship", "research"], false, "Category?");  
@@ -17,25 +36,6 @@ onNew: () => tp.system.prompt("New Tech?")
 
 const techStack = techStackRaw.map(tp.user.tagify);  
 const techStackStr = techStack.map(t => `"${t}"`).join(", ");
-
-// ----- dates & auto‑generated year tags -----  
-// Prompt the user with natural-language date input
-let startRaw = await tp.system.prompt('Start Date? (format: MONTH YEAR, e.g. "October 2021, 10/2021, 10 2021, 10-2021")');
-let endRaw   = await tp.system.prompt('End Date? (format: MONTH YEAR, e.g. "October 2021, 10/2021, 10 2021, 10-2021")');
-
-// Fallbacks if user enters nothing
-if (!startRaw?.trim()) startRaw = "May 2025";
-if (!endRaw?.trim()) endRaw   = "May 2025";
-
-// Parse using moment
-const startDate = moment(startRaw).format("MMMM YYYY");
-const endDate   = moment(endRaw).format("MMMM YYYY");
-
-const startDateYear = tp.date.now("YYYY", 0, startDate,"MMMM YYYY");
-const endDateYear = tp.date.now("YYYY", 0, startDate, "MMMM YYYY");
-
-let include = [startDateYear];
-if (endDateYear != startDateYear) include.push(endDateYear);
 
 // ----- tag picker (includes the two years) -----  
 const tagsArr = await tp.user.suggestTags(tp, { include: include });  
