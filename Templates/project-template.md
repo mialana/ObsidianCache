@@ -1,6 +1,7 @@
 <%*
 function slugify(name) {return name.toLowerCase().replace(" ", /-/g);}
-const slug = slugify("{{NAME}}");
+
+const title = "{{VALUE:Title}}";
 
 const techStack = [];
 
@@ -14,8 +15,8 @@ techStackStr = techStack.map(t => `"${t}"`).join(", ");
 
 const tags = [];
 
-const startDateYear = tp.date.now("YYYY",0,"{{VDATE:startDate, MMMM YYYY}}","MMMM YYYY");
-const endDateYear = tp.date.now("YYYY",0,"{{VDATE:endDate, MMMM YYYY}}","MMMM YYYY");
+const startDateYear = tp.date.now("YYYY",0,"{{VDATE:StartDate, MMMM YYYY}}","MMMM YYYY");
+const endDateYear = tp.date.now("YYYY",0,"{{VDATE:EndDate, MMMM YYYY}}","MMMM YYYY");
 
 tags.push(startDateYear);
 if (endDateYear !== startDateYear) {
@@ -29,26 +30,37 @@ while (true) {
 }
 
 tagsStr = tags.map(t => `"${t}"`).join(", ");
+
+const slug = slugify(title);
+
+const assets_dir = "contents/projects/{{VALUE:Title}}/assets"
+
+await tp.user.mkdir({OBSIDIAN_ASSETS_DIR: assets_dir};
 -%>
 ---
-title: {{NAME}}
-startDate: "{{VDATE:startDate, MMMM YYYY}}"
-endDate: "{{VDATE:endDate, MMMM YYYY}}"
-demoVideoLink: "{{VALUE:demoVideoLink}}"
+title: "{{VALUE:Title}}"
+startDate: "{{VDATE:StartDate, MMMM YYYY}}"
+endDate: "{{VDATE:EndDate, MMMM YYYY}}"
+type: "<% await tp.system.suggester((type) => type, ["individual", "group"], false, "Category?") -%>"
+category: "<% await tp.system.suggester((category) => category, ["personal", "school", "internship", "research"], false, "Category?") -%>"
+demoVideoLink: "<% await tp.system.prompt("Demo Video Link? -> https://studio.youtube.com")%>"
 techStack: [
 	<%* tR += techStackStr; %>
 ]
 tags: [
-	<%* tR += tagsStr; %>
+	<%* tR += tagsStr; -%>
 ]
 slug: "<%* tR += slug; %>"
 
 ---
 
 ## Summary
+This project is about {{VALUE:Title}}.
 
 ## Motivation
 
 ## Next Steps
 
 ## References
+
+## Method

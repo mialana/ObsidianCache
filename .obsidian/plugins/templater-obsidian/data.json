@@ -1,10 +1,10 @@
 {
   "command_timeout": 5,
-  "templates_folder": "Templates",
+  "templates_folder": "",
   "templates_pairs": [
     [
-      "",
-      ""
+      "makedir",
+      "mkdir $OBSIDIAN_ASSETS_DIR"
     ]
   ],
   "trigger_on_file_creation": false,

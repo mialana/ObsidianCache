@@ -31,12 +31,12 @@
             "templatePath": "Templates/project-template.md",
             "fileNameFormat": {
               "enabled": true,
-              "format": "{{name}}"
+              "format": "{{VALUE:Title}}"
             },
             "folder": {
               "enabled": true,
               "folders": [
-                "content/projects/{{name}}"
+                "content/projects/{{VALUE:Title}}"
               ],
               "chooseWhenCreatingNote": false,
               "createInSameFolderAsActiveFile": false,
@@ -53,12 +53,6 @@
             "fileExistsMode": "Increment the file name",
             "setFileExistsBehavior": false
           }
-        },
-        {
-          "name": "Files: Create new folder",
-          "type": "Obsidian",
-          "id": "6d6b4fd7-c175-4472-9035-223bd26ed03a",
-          "commandId": "file-explorer:new-folder"
         }
       ],
       "runOnStartup": false

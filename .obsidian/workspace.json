@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "464cad109fc328ea",
+        "id": "96649e3b8d86a76a",
         "type": "tabs",
         "children": [
           {
-            "id": "b021343898c41a41",
+            "id": "745f3e0e7b41bd38",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -197,27 +197,32 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b021343898c41a41",
+  "active": "4e1e32900b764af7",
   "lastOpenFiles": [
-    "content/projects/USD-Asset-Browser/USD-Asset-Browser.mdx",
-    "content/projects/USD-Asset-Browser/metadata.md",
+    "content/projects/USD-Asset-Browser/USD-Asset-Browser.md",
     "Templates/project-template.md",
+    "Untitled.md",
+    "content/projects/nextTest/nextTest.md",
+    "content/projects/nextTest",
+    "content/projects/test/test.md",
+    "content/projects/test",
+    "{{title}}.md",
+    "{{TITLE}}.md",
+    "content/projects/Omniverse ComfyUI Plugin",
+    "content/projects/Neural-for-USD/Neural-for-USD.md",
+    "content/projects/Mini-Minecraft/Mini-Minecraft.md",
     "content/projects/USD-Asset-Browser/assets/Flattened_Asset_Layer.png",
+    "content/projects/USD-Asset-Browser/metadata.md",
+    "content/projects/USD-Asset-Browser/USD-Asset-Browser.mdx",
     "content/projects/Neural-for-USD/Neural-for-USD.mdx",
     "content/projects/Mini-Minecraft/Mini-Minecraft.mdx",
     "content/projects/Mini-Minecraft",
-    "content/projects/USD-Asset-Browser/USD-Asset-Browser.md",
-    "content/projects/Neural-for-USD/Neural-for-USD.md",
     "content/projects/USD-Asset-Browser/assets",
     "content/projects/USD-Asset-Browser",
     "content/projects/Neural-for-USD",
-    "content/projects",
     "content/project/MiniMaya/assets/temp.png",
     "content/project/MiniMinecraft/MiniMinecraft.md",
-    "content/project/MiniMaya/assets",
-    "content/project/MiniMaya/MiniMaya.mdx",
     "content/projects/tester/tester.md",
-    "content/projects/Mini-Minecraft/Mini-Minecraft.md",
     "content/project/Mini-Minecraft/Mini-Minecraft.md",
     "content/project/USD-Asset-Browser/USD-Asset-Browser.md",
     "content/project/USD-Asset-Browser/assets/Flattened_Asset_Layer.png",
@@ -235,10 +240,6 @@
     "content/projects/astro-micro/index.md",
     "Lists/Hackathons.md",
     "content/project/test/test.md",
-    "Templates/project-template 2.md",
-    "content/project/work/work.md",
-    "content/project/new/new.md",
-    "content/project/testing/testing.md",
     "Untitled.canvas",
     "CIS 4610/Untitled.canvas"
   ]
