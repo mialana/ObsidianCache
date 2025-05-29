@@ -86,8 +86,8 @@ title: "<%* tR += title; %>"
 slug: "<%* tR += slug; %>"
 startDate: "<%* tR += startDate; %>"
 endDate: "<%* tR += endDate; %>"
-type: "<%* tR += type; -%>"
-category: "<%* tR += category; -%>"
+type: "<%* tR += type; %>"
+category: "<%* tR += category; %>"
 demoVideoLink: "<%* tR += demoVideoLink; %>"
 techStack: [
 	<%* tR += techStackStr; %>
@@ -95,7 +95,8 @@ techStack: [
 tags: [
 	<%* tR += tagsStr; %>
 ]
-description: This project is about <%* tR += title; %>.
+description: This project is about <%* tR += title; -%>.
+
 ---
 
 ## Summary
