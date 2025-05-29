@@ -9,7 +9,7 @@ module.exports = async function (
     onNew = async () => tp.system.prompt("New value?"),
   } = {}
 ) {
-  const remove = require("./arrayRemove");
+  const remove = tp.user.arrayRemove;
   const picked = [];
 
   while (true) {

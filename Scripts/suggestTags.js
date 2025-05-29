@@ -1,12 +1,12 @@
 module.exports = async function (tp, { include = [] } = {}) {
-  const tagify = require("./tagify");
-  const suggestLoop = require("./suggestLoop");
+  const tagify = tp.user.tagify;
+  const suggestLoop = tp.user.suggestLoop;
 
   const vaultTags = Object.keys(tp.app.metadataCache.getTags()).map((t) =>
     t.replace(/^#/, "")
   );
 
-  const baseChoices = ["FINISH", "NEW TAG", ...include, ...vaultTags];
+  const baseChoices = ["FINISH", "NEW TAG", ...vaultTags];
 
   const picked = await suggestLoop(tp, baseChoices, {
     prompt: "Tag?",
@@ -15,5 +15,5 @@ module.exports = async function (tp, { include = [] } = {}) {
     onNew: () => tp.system.prompt("New tag?"),
   });
 
-  return picked.map(tagify);
+  return include.concat(picked.map(tagify));
 };
