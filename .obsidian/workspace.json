@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "497045e7373a9cc0",
+        "id": "6bff82e91ec9fd87",
         "type": "tabs",
         "children": [
           {
-            "id": "bedc85472fe8bf21",
+            "id": "7c62cef069999a80",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "project-template"
             }
+          },
+          {
+            "id": "cf047b7f2bf5f7c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "content/projects/Mini-Minecraft/Mini-Minecraft.md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "Mini-Minecraft"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -142,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Templates/project-template.md",
+                "file": "content/projects/Mini-Minecraft/Mini-Minecraft.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of project-template"
+              "title": "Outline of Mini-Minecraft"
             }
           },
           {
@@ -197,27 +212,30 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bedc85472fe8bf21",
+  "active": "cf047b7f2bf5f7c4",
   "lastOpenFiles": [
+    "content/projects/Neural-for-USD/Neural-for-USD.md",
+    "content/projects/Omniverse-ComfyUI-Plugin/Omniverse-ComfyUI-Plugin.md",
+    "content/projects/USD-Asset-Browser/USD-Asset-Browser.md",
+    "content/projects/Mini-Minecraft/Mini-Minecraft.md",
+    "Templates/project-template.md",
+    "content/projects/Omniverse-ComfyUI-Plugin/assets",
+    "content/projects/Omniverse-ComfyUI-Plugin",
+    "content/projects/test/test.md",
+    "content/projects/test/assets",
+    "content/projects/test",
+    "content/projects/e/e.md",
+    "content/projects/e/assets",
+    "content/projects/e",
     "content/projects/Test-My/Test-My.md",
     "content/projects/Test-My/assets",
     "content/projects/Test-My",
-    "Templates/project-template.md",
-    "content/projects/USD-Asset-Browser/USD-Asset-Browser.md",
-    "content/projects/Mini-Minecraft/Mini-Minecraft.md",
     "content/projects/Test-My-Script/Test-My-Script.md",
     "content/projects/Test-My-Script/assets",
     "content/projects/Test-My-Script",
-    "content/projects/test",
-    "content/projects/tit",
     "content/projects/last Test/last Test.md",
-    "content/projects/last",
-    "content/projects/last Test",
     "content/projects/m/m.md",
-    "content/projects/m/assets",
-    "content/projects/m",
     "content/projects/def/def.md",
-    "content/projects/test/test.md",
     "content/projects/make/make.md",
     "content/projects/mine/mine.md",
     "content/projects/ne/ne.md",
@@ -232,9 +250,7 @@
     "content/projects/nextTest/nextTest.md",
     "{{title}}.md",
     "{{TITLE}}.md",
-    "content/projects/Neural-for-USD/Neural-for-USD.md",
     "content/projects/USD-Asset-Browser/assets/Flattened_Asset_Layer.png",
-    "content/projects/USD-Asset-Browser/metadata.md",
     "content/project/MiniMaya/assets/temp.png",
     "content/project/USD-Asset-Browser/assets/Flattened_Asset_Layer.png",
     "content/blog/metamorphosis/metamorphosis.jpg",

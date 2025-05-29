@@ -1,6 +1,28 @@
 <%*
-function deslugify(title) {return title.trim().replace("-"," ");}
-function tagify(tag) {return tag.trim().replace(" ", "_");}
+function getPastTechStack() {
+  const allFiles = app.vault.getMarkdownFiles();
+  const techs = new Set();
+
+  for (let file of allFiles) {
+    const cache = app.metadataCache.getFileCache(file);
+    const frontmatter = cache?.frontmatter;
+    if (frontmatter?.techStack && Array.isArray(frontmatter.techStack)) {
+      frontmatter.techStack.forEach(t => techs.add(t));
+    }
+  }
+
+  return Array.from(techs).sort();
+}
+
+function remove(arr, item) {
+  const index = arr.indexOf(item);
+  if (index != -1) {
+    arr.splice(index, 1);
+  }
+}
+
+function deslugify(title) {return title.trim().replace(/-/g," ");}
+function tagify(tag) {return tag.trim().replace(/ /g, "_");}
 
 const slug = "{{VALUE:Slug}}";
 const title = deslugify(slug);
@@ -12,14 +34,19 @@ const type = await tp.system.suggester((type) => type, ["individual", "group"], 
 
 const category = await tp.system.suggester((category) => category, ["personal", "school", "internship", "research"], false, "Category?");
 
-const demoVideoLink = await tp.system.prompt("Demo Video Link? -> https://studio.youtube.com");
+const demoVideoLink = await tp.system.prompt("Demo Video Link?");
 
+let techChoices = ["NEW TECH", "FINISH"].concat(getPastTechStack());
 const techStack = [];
 
 while (true) {
-  const tech = await tp.system.prompt("Tech Used? (leave blank to finish)");
-  if (!tech) break;
-  techStack.push(tech.trim());
+  let tech = await tp.system.suggester(item => item, techChoices, false, "Tech Used?");
+  if (!tech || tech == "FINISH") break;
+  if (tech == "NEW TECH") {
+    tech = await tp.system.prompt("New Tech?");
+  }
+  techStack.push(tagify(tech));
+  remove(techChoices, tech);
 }
 
 techStackStr = techStack.map(t => `"${t}"`).join(", ");
@@ -34,21 +61,18 @@ if (endDateYear !== startDateYear) {
   tags.push(endDateYear);
 }
 
-let choices = ["NEW TAG", "CANCEL"].concat(
+let tagChoices = ["NEW TAG", "FINISH"].concat(
 Object.keys(app.metadataCache.getTags()).map(x => x.replace("#", "")));
 
 while (true) {
-  let tag = await tp.system.suggester(item => item, choices, false, "Tag?", 10)
-  if (!tag || tag == "CANCEL") break;
+  let tag = await tp.system.suggester(item => item, tagChoices, false, "Tag?", 10)
+  if (!tag || tag == "FINISH") break;
   if (tag == "NEW TAG") {
     tag = await tp.system.prompt("New Tag?");
   }
   
   tags.push(tagify(tag));
-  const index = choices.indexOf(tag);
-  if (index != -1) {
-    choices.splice(choices.indexOf(tag), 1);
-  }
+  remove(tagChoices, tag);
 }
 
 tagsStr = tags.map(t => `"${t}"`).join(", ");
