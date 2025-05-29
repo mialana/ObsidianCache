@@ -1,23 +1,7 @@
 <%*
 const {title, slug} = await tp.user.setup(tp, "projects");
 
-console.log(tp.app.plugins.getPlugin("nldates-obsidian"))
-// Prompt the user with natural-language date input
-let startRaw = await tp.system.prompt("Start Date? (format: MM YYYY)");
-if (!startRaw?.trim() || startRaw == "Invalid date") startRaw = "05 2025";
-// Parse using moment
-const startDate = moment(startRaw, "MM YYYY").format("MMMM YYYY");
-
-let endRaw   = await tp.system.prompt("End Date? (format: MM YYYY)");
-if (!endRaw?.trim() || endRaw == "Invalid date") endRaw = "05 2025";
-const endDate = await moment(endRaw, "MM YYYY").format("MMMM YYYY");
-
-// ----- dates & auto‑generated year tags ---
-const startDateYear = moment(startDate, "MMMM YYYY").format("YYYY");
-const endDateYear   = moment(endDate,   "MMMM YYYY").format("YYYY");
-
-let include = [startDateYear];
-if (endDateYear != startDateYear) include.push(endDateYear);
+const {startDate, endDate, tagsInclude} = await tp.user.handleProjectDates(tp);
 
 // ----- basic frontmatter fields -----  
 const type = await tp.system.suggester(x => x, ["individual", "group"], false, "Type?");  
@@ -37,7 +21,7 @@ const techStack = techStackRaw.map(tp.user.tagify);
 const techStackStr = techStack.map(t => `"${t}"`).join(", ");
 
 // ----- tag picker (includes the two years) -----  
-const tagsArr = await tp.user.suggestTags(tp, { include: include });  
+const tagsArr = await tp.user.suggestTags(tp, { include: tagsInclude });  
 const tagsStr = tagsArr.map(t => `"${t}"`).join(", ");
 _%>
 
