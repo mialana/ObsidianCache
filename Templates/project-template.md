@@ -11,8 +11,6 @@ let endRaw   = await tp.system.prompt("End Date? (format: MM YYYY)");
 if (!endRaw?.trim() || endRaw == "Invalid date") endRaw = "May 2025";
 const endDate = await moment(endRaw, "MM YYYY").format("MMMM YYYY");
 
-console.log(startDate);
-console.log(endDate);
 // ----- dates & auto‑generated year tags ---
 const startDateYear = moment(startDate, "MMMM YYYY").format("YYYY");
 const endDateYear   = moment(endDate,   "MMMM YYYY").format("YYYY");

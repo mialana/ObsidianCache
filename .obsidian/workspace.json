@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/projects/Omniverse-ComfyUI-Plugin/Omniverse-ComfyUI-Plugin.md",
+                "file": "Templates/project-template.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Omniverse-ComfyUI-Plugin"
+              "title": "project-template"
             }
           }
         ]
@@ -210,6 +210,7 @@
   },
   "active": "5c1ad0d9eacd622c",
   "lastOpenFiles": [
+    "content/projects/Omniverse-ComfyUI-Plugin/Omniverse-ComfyUI-Plugin.md",
     "content/projects/Last/Last.md",
     "content/projects/Last/assets",
     "Templates/project-template.md",
