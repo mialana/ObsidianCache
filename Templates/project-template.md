@@ -1,7 +1,18 @@
 <%*
-function slugify(name) {return name.toLowerCase().replace(" ", /-/g);}
+function deslugify(title) {return title.trim().replace("-"," ");}
+function tagify(tag) {return tag.trim().replace(" ", "_");}
 
-const title = "{{VALUE:Title}}";
+const slug = "{{VALUE:Slug}}";
+const title = deslugify(slug);
+
+const assets_dir = "./content/projects/{{VALUE:Slug}}/assets";
+await tp.user.makedir({OBSIDIAN_ASSETS_DIR: assets_dir});
+
+const type = await tp.system.suggester((type) => type, ["individual", "group"], false, "Type?");
+
+const category = await tp.system.suggester((category) => category, ["personal", "school", "internship", "research"], false, "Category?");
+
+const demoVideoLink = await tp.system.prompt("Demo Video Link? -> https://studio.youtube.com");
 
 const techStack = [];
 
@@ -23,39 +34,44 @@ if (endDateYear !== startDateYear) {
   tags.push(endDateYear);
 }
 
+let choices = ["NEW TAG", "CANCEL"].concat(
+Object.keys(app.metadataCache.getTags()).map(x => x.replace("#", "")));
+
 while (true) {
-  const tag = await tp.system.prompt("Tag? (leave blank to finish)");
-  if (!tag) break;
-  tags.push(tag.trim());
+  let tag = await tp.system.suggester(item => item, choices, false, "Tag?", 10)
+  if (!tag || tag == "CANCEL") break;
+  if (tag == "NEW TAG") {
+    tag = await tp.system.prompt("New Tag?");
+  }
+  
+  tags.push(tagify(tag));
+  const index = choices.indexOf(tag);
+  if (index != -1) {
+    choices.splice(choices.indexOf(tag), 1);
+  }
 }
 
 tagsStr = tags.map(t => `"${t}"`).join(", ");
-
-const slug = slugify(title);
-
-const assets_dir = "contents/projects/{{VALUE:Title}}/assets"
-
-await tp.user.mkdir({OBSIDIAN_ASSETS_DIR: assets_dir};
 -%>
 ---
-title: "{{VALUE:Title}}"
+title: "<%* tR += title; %>"
 startDate: "{{VDATE:StartDate, MMMM YYYY}}"
 endDate: "{{VDATE:EndDate, MMMM YYYY}}"
-type: "<% await tp.system.suggester((type) => type, ["individual", "group"], false, "Category?") -%>"
-category: "<% await tp.system.suggester((category) => category, ["personal", "school", "internship", "research"], false, "Category?") -%>"
-demoVideoLink: "<% await tp.system.prompt("Demo Video Link? -> https://studio.youtube.com")%>"
+type: "<%* tR += type; -%>"
+category: "<%* tR += category; -%>"
+demoVideoLink: "<%* tR += demoVideoLink; %>"
 techStack: [
 	<%* tR += techStackStr; %>
 ]
 tags: [
-	<%* tR += tagsStr; -%>
+	<%* tR += tagsStr; %>
 ]
 slug: "<%* tR += slug; %>"
 
 ---
 
 ## Summary
-This project is about {{VALUE:Title}}.
+This project is about <%* tR += title; %>.
 
 ## Motivation
 

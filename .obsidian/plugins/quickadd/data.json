@@ -31,12 +31,12 @@
             "templatePath": "Templates/project-template.md",
             "fileNameFormat": {
               "enabled": true,
-              "format": "{{VALUE:Title}}"
+              "format": "{{VALUE:Slug}}"
             },
             "folder": {
               "enabled": true,
               "folders": [
-                "content/projects/{{VALUE:Title}}"
+                "content/projects/{{VALUE:Slug}}"
               ],
               "chooseWhenCreatingNote": false,
               "createInSameFolderAsActiveFile": false,
