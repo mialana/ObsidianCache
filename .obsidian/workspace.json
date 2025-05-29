@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6bff82e91ec9fd87",
+        "id": "42b011d9e0de8f86",
         "type": "tabs",
         "children": [
           {
-            "id": "7c62cef069999a80",
+            "id": "85decaf85b0160ab",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,23 +20,8 @@
               "icon": "lucide-file",
               "title": "project-template"
             }
-          },
-          {
-            "id": "cf047b7f2bf5f7c4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/projects/USD-Asset-Browser/USD-Asset-Browser.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "USD-Asset-Browser"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 292.5
   },
   "right": {
     "id": "ad89936ab6c00db4",
@@ -157,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/projects/USD-Asset-Browser/USD-Asset-Browser.md",
+                "file": "Templates/project-template.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of USD-Asset-Browser"
+              "title": "Outline of project-template"
             }
           },
           {
@@ -212,44 +197,43 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cf047b7f2bf5f7c4",
+  "active": "85decaf85b0160ab",
   "lastOpenFiles": [
+    "content/projects/Last/Last.md",
+    "Templates/project-template.md",
+    "content/projects/Last/assets",
+    "content/projects/Last",
+    "content/projects/mine/mine.md",
+    "content/projects/mine",
+    "content/projects/USD-Asset-Browser/USD-Asset-Browser.md",
+    "content/projects/Test/Test.md",
+    "content/projects/Test/Test1.md",
+    "content/projects/Test/assets",
+    "content/projects/Test",
+    "content/projects/TEst/Test1.md",
+    "content/projects/TEst/TEst.md",
+    "content/projects/TEst/assets",
+    "content/projects/TEst",
     "content/projects/Omniverse-ComfyUI-Plugin/Omniverse-ComfyUI-Plugin.md",
     "content/projects/Neural-for-USD/Neural-for-USD.md",
     "content/projects/Mini-Minecraft/Mini-Minecraft.md",
-    "content/projects/USD-Asset-Browser/USD-Asset-Browser.md",
-    "Templates/project-template.md",
     "content/projects/Omniverse-ComfyUI-Plugin/assets",
     "content/projects/Omniverse-ComfyUI-Plugin",
     "content/projects/test/test.md",
     "content/projects/test/assets",
-    "content/projects/test",
     "content/projects/e/e.md",
-    "content/projects/e/assets",
-    "content/projects/e",
     "content/projects/Test-My/Test-My.md",
-    "content/projects/Test-My/assets",
-    "content/projects/Test-My",
     "content/projects/Test-My-Script/Test-My-Script.md",
-    "content/projects/Test-My-Script/assets",
-    "content/projects/Test-My-Script",
     "content/projects/last Test/last Test.md",
     "content/projects/m/m.md",
     "content/projects/def/def.md",
     "content/projects/make/make.md",
-    "content/projects/mine/mine.md",
     "content/projects/ne/ne.md",
     "content/projects/new/new.md",
     "content/projects/t/t.md",
     "content/projects/test/test1.md",
     "content/projects/Test/test1.md",
     "content/projects/my/my.md",
-    "content/projects/Test/Test.md",
-    "content/projects/Test/Test1.md",
-    "Untitled.md",
-    "content/projects/nextTest/nextTest.md",
-    "{{title}}.md",
-    "{{TITLE}}.md",
     "content/projects/USD-Asset-Browser/assets/Flattened_Asset_Layer.png",
     "content/project/MiniMaya/assets/temp.png",
     "content/project/USD-Asset-Browser/assets/Flattened_Asset_Layer.png",

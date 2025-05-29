@@ -36,7 +36,7 @@ const category = await tp.system.suggester((category) => category, ["personal", 
 
 const demoVideoLink = await tp.system.prompt("Demo Video Link?");
 
-let techChoices = ["NEW TECH", "FINISH"].concat(getPastTechStack());
+let techChoices = ["FINISH", "NEW TECH"].concat(getPastTechStack());
 const techStack = [];
 
 while (true) {
@@ -53,15 +53,19 @@ techStackStr = techStack.map(t => `"${t}"`).join(", ");
 
 const tags = [];
 
-const startDateYear = tp.date.now("YYYY",0,"{{VDATE:StartDate, MMMM YYYY}}","MMMM YYYY");
-const endDateYear = tp.date.now("YYYY",0,"{{VDATE:EndDate, MMMM YYYY}}","MMMM YYYY");
+let startDate = "{{VDATE:StartDate, MMMM YYYY}}";
+let endDate = "{{VDATE:EndDate, MMMM YYYY}}";
+if (startDate == "Invalid date") startDate = "{{DATE:MMMM YYYY}}";
+if (endDate == "Invalid date") endDate = "{{DATE:MMMM YYYY}}";
+const startDateYear = tp.date.now("YYYY", 0, startDate,"MMMM YYYY");
+const endDateYear = tp.date.now("YYYY", 0, startDate, "MMMM YYYY");
 
 tags.push(startDateYear);
 if (endDateYear !== startDateYear) {
   tags.push(endDateYear);
 }
 
-let tagChoices = ["NEW TAG", "FINISH"].concat(
+let tagChoices = ["FINISH", "NEW TAG"].concat(
 Object.keys(app.metadataCache.getTags()).map(x => x.replace("#", "")));
 
 while (true) {
@@ -79,8 +83,9 @@ tagsStr = tags.map(t => `"${t}"`).join(", ");
 -%>
 ---
 title: "<%* tR += title; %>"
-startDate: "{{VDATE:StartDate, MMMM YYYY}}"
-endDate: "{{VDATE:EndDate, MMMM YYYY}}"
+slug: "<%* tR += slug; %>"
+startDate: "<%* tR += startDate; %>"
+endDate: "<%* tR += endDate; %>"
 type: "<%* tR += type; -%>"
 category: "<%* tR += category; -%>"
 demoVideoLink: "<%* tR += demoVideoLink; %>"
@@ -90,12 +95,10 @@ techStack: [
 tags: [
 	<%* tR += tagsStr; %>
 ]
-slug: "<%* tR += slug; %>"
-
+description: This project is about <%* tR += title; %>.
 ---
 
 ## Summary
-This project is about <%* tR += title; %>.
 
 ## Motivation
 
