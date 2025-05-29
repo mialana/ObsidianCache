@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/projects/Mini-Minecraft/Mini-Minecraft.md",
+                "file": "content/projects/USD-Asset-Browser/USD-Asset-Browser.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Mini-Minecraft"
+              "title": "USD-Asset-Browser"
             }
           }
         ],
@@ -157,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/projects/Mini-Minecraft/Mini-Minecraft.md",
+                "file": "content/projects/USD-Asset-Browser/USD-Asset-Browser.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Mini-Minecraft"
+              "title": "Outline of USD-Asset-Browser"
             }
           },
           {
@@ -214,10 +214,10 @@
   },
   "active": "cf047b7f2bf5f7c4",
   "lastOpenFiles": [
-    "content/projects/Neural-for-USD/Neural-for-USD.md",
     "content/projects/Omniverse-ComfyUI-Plugin/Omniverse-ComfyUI-Plugin.md",
-    "content/projects/USD-Asset-Browser/USD-Asset-Browser.md",
+    "content/projects/Neural-for-USD/Neural-for-USD.md",
     "content/projects/Mini-Minecraft/Mini-Minecraft.md",
+    "content/projects/USD-Asset-Browser/USD-Asset-Browser.md",
     "Templates/project-template.md",
     "content/projects/Omniverse-ComfyUI-Plugin/assets",
     "content/projects/Omniverse-ComfyUI-Plugin",
