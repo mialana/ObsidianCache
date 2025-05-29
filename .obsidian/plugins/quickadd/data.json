@@ -8,32 +8,11 @@
       "macroId": "bb21d248-9685-457a-b3da-a8fc8024914d"
     },
     {
-      "id": "d1d22a49-770c-4758-a935-9670dd1a0ce6",
-      "name": "New Blog Page",
-      "type": "Template",
+      "id": "7f426da7-6418-4d1a-9d33-0b6e08fbf73a",
+      "name": "New Post Page",
+      "type": "Macro",
       "command": true,
-      "templatePath": "",
-      "fileNameFormat": {
-        "enabled": false,
-        "format": ""
-      },
-      "folder": {
-        "enabled": false,
-        "folders": [],
-        "chooseWhenCreatingNote": false,
-        "createInSameFolderAsActiveFile": false,
-        "chooseFromSubfolders": false
-      },
-      "appendLink": false,
-      "openFileInNewTab": {
-        "enabled": false,
-        "direction": "vertical",
-        "focus": true
-      },
-      "openFile": false,
-      "openFileInMode": "default",
-      "fileExistsMode": "Increment the file name",
-      "setFileExistsBehavior": false
+      "macroId": "68d80a7b-6277-4238-827f-7d5f9181d09c"
     }
   ],
   "macros": [
@@ -48,15 +27,67 @@
           "commandId": "workspace:close-tab-group"
         },
         {
-          "name": "Project name:",
+          "name": "CHOICE: Project Page",
           "type": "NestedChoice",
           "id": "357d4632-2f84-40fd-8805-b531f2ddb5bb",
           "choice": {
             "id": "c343c79a-40ae-4a09-ae23-856a905ba9d5",
-            "name": "Project name:",
+            "name": "CHOICE: Project Page",
             "type": "Template",
             "command": false,
             "templatePath": "Templates/project-template.md",
+            "fileNameFormat": {
+              "enabled": true,
+              "format": "{{VALUE:Title}}"
+            },
+            "folder": {
+              "enabled": false,
+              "folders": [],
+              "chooseWhenCreatingNote": false,
+              "createInSameFolderAsActiveFile": false,
+              "chooseFromSubfolders": false
+            },
+            "appendLink": false,
+            "openFileInNewTab": {
+              "enabled": true,
+              "direction": "vertical",
+              "focus": false
+            },
+            "openFile": false,
+            "openFileInMode": "default",
+            "fileExistsMode": "Increment the file name",
+            "setFileExistsBehavior": false
+          }
+        },
+        {
+          "name": "Navigate back",
+          "type": "Obsidian",
+          "id": "2ad5ea69-9d19-47e6-92cb-017d4cfa7677",
+          "commandId": "app:go-back"
+        }
+      ],
+      "runOnStartup": false
+    },
+    {
+      "name": "MACRO: New post page",
+      "id": "68d80a7b-6277-4238-827f-7d5f9181d09c",
+      "commands": [
+        {
+          "name": "Close this tab group",
+          "type": "Obsidian",
+          "id": "ff737c34-3eb2-4171-92b0-e3947acebfff",
+          "commandId": "workspace:close-tab-group"
+        },
+        {
+          "name": "CHOICE: Post Page",
+          "type": "NestedChoice",
+          "id": "bc6fc711-8aff-494d-9fe1-81f88294b917",
+          "choice": {
+            "id": "dde92123-2399-483a-a6d5-575d324055d4",
+            "name": "CHOICE: Post Page",
+            "type": "Template",
+            "command": false,
+            "templatePath": "Templates/post-template.md",
             "fileNameFormat": {
               "enabled": true,
               "format": "{{VALUE:Title}}"

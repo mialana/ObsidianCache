@@ -1,10 +1,12 @@
 <%* 
-function slugify(title) {return title.trim().replace(/ /g,"-");}
+const title = "{{VALUE:Title}}";
+const slug = tp.user.slugify(title);
 
-const title = await tp.system.prompt("Enter note title");
-const slug = slugify(title);
+const fileName = `./content/posts/${slug}/${slug}`;
+await tp.file.move(fileName);
 
-tp.file.move("./content/posts/" + slug);
+const file = tp.file.find_tfile(fileName);
+app.workspace.getLeaf("tab").openFile(file);
 
 const creationDate = tp.date.now("YYYY-MM-DD HH:mm:ss");
 
