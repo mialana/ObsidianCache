@@ -8,5 +8,5 @@
   "weekStart": "locale-default",
   "modalToggleTime": false,
   "modalToggleLink": false,
-  "modalMomentFormat": "YYYY-MM-DD HH:mm"
+  "modalMomentFormat": "YYYY-MM-DD"
 }

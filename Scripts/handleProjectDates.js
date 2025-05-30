@@ -6,7 +6,7 @@ module.exports = async function (tp) {
     if (startDateObj.formattedString == "Invalid date") {
         startDateObj = nldatesPlugin.parseDate("now");
     }
-    const startDate = startDateObj.moment.format("MMMM YYYY");
+    const startDate = startDateObj.moment.format("YYYY-MM-DD");
     const startDateYear = startDateObj.moment.format("YYYY");
 
     const endInput = await tp.system.prompt("End Date?");
@@ -14,7 +14,7 @@ module.exports = async function (tp) {
     if (endDateObj.formattedString == "Invalid date") {
         endDateObj = nldatesPlugin.parseDate("now");
     }
-    const endDate = endDateObj.moment.format("MMMM YYYY");
+    const endDate = endDateObj.moment.format("YYYY-MM-DD");
     const endDateYear = endDateObj.moment.format("YYYY");
     
 
