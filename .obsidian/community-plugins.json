@@ -3,5 +3,8 @@
   "templater-obsidian",
   "nldates-obsidian",
   "obsidian-git",
-  "vscode-editor"
+  "vscode-editor",
+  "obsidian-latex-suite",
+  "obsidian-graphviz",
+  "ink"
 ]
