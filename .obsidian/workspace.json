@@ -6,6 +6,7 @@
       {
         "id": "e8a45233e27d5df4",
         "type": "tabs",
+        "dimension": 54.79910714285714,
         "children": [
           {
             "id": "e18b36bc6a9cb4f8",
@@ -13,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CIS 2620/1a. Introduction to the Limits of Computability.md",
+                "file": "CIS 2620/1. Introduction to the Limits of Computability.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "1a. Introduction to the Limits of Computability"
+              "title": "1. Introduction to the Limits of Computability"
             }
           }
         ]
@@ -26,6 +27,7 @@
       {
         "id": "2f016a7557c4d60a",
         "type": "tabs",
+        "dimension": 45.200892857142854,
         "children": [
           {
             "id": "d3a30f7c4995ae92",
@@ -33,12 +35,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CIS 2620/1a. Introduction to the Limits of Computability.md",
+                "file": "CIS 2620/1. Introduction to the Limits of Computability.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1a. Introduction to the Limits of Computability"
+              "title": "1. Introduction to the Limits of Computability"
             }
           }
         ]
@@ -98,7 +100,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "ad89936ab6c00db4",
@@ -162,13 +165,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CIS 2620/1a. Introduction to the Limits of Computability.md",
+                "file": "CIS 2620/1. Introduction to the Limits of Computability.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 1a. Introduction to the Limits of Computability"
+              "title": "Outline of 1. Introduction to the Limits of Computability"
             }
           },
           {
@@ -201,10 +204,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "CIS 2620/1a. Introduction to the Limits of Computability.md"
+                "file": "CIS 2620/1. Introduction to the Limits of Computability.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for 1a. Introduction to the Limits of Computability"
+              "title": "File properties for 1. Introduction to the Limits of Computability"
             }
           }
         ],
@@ -230,10 +233,10 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "4e1e32900b764af7",
+  "active": "e18b36bc6a9cb4f8",
   "lastOpenFiles": [
     "Lecture-1.md",
-    "CIS 2620/1a. Introduction to the Limits of Computability.md",
+    "CIS 2620/1. Introduction to the Limits of Computability.md",
     "Ink/Writing/2025.5.31 - 21.13pm.writing",
     "Ink/Writing",
     "Ink",
