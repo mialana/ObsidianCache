@@ -4,43 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e8a45233e27d5df4",
+        "id": "0ee1c18a9eeb798a",
         "type": "tabs",
-        "dimension": 54.79910714285714,
         "children": [
           {
-            "id": "e18b36bc6a9cb4f8",
+            "id": "cdca475ab5ca411f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CIS 2620/1. Introduction to the Limits of Computability.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "1. Introduction to the Limits of Computability"
-            }
-          }
-        ]
-      },
-      {
-        "id": "2f016a7557c4d60a",
-        "type": "tabs",
-        "dimension": 45.200892857142854,
-        "children": [
-          {
-            "id": "d3a30f7c4995ae92",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CIS 2620/1. Introduction to the Limits of Computability.md",
+                "file": "content/projects/PAPAYA/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1. Introduction to the Limits of Computability"
+              "title": "index"
             }
           }
         ]
@@ -100,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "ad89936ab6c00db4",
@@ -165,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CIS 2620/1. Introduction to the Limits of Computability.md",
+                "file": "content/projects/PAPAYA/index.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 1. Introduction to the Limits of Computability"
+              "title": "Outline of index"
             }
           },
           {
@@ -204,10 +181,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "CIS 2620/1. Introduction to the Limits of Computability.md"
+                "file": "CIS 2620/2. Limits of DFAs.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for 1. Introduction to the Limits of Computability"
+              "title": "File properties for 2. Limits of DFAs"
             }
           }
         ],
@@ -229,14 +206,17 @@
       "command-palette:Open command palette": false,
       "publish:Publish changes...": false,
       "obsidian-git:Open Git source control": false,
-      "vscode-editor:Create Code File": false,
-      "obsidian-excalidraw-plugin:New drawing": false
+      "vscode-editor:Create Code File": false
     }
   },
   "active": "4e1e32900b764af7",
   "lastOpenFiles": [
+    "content/projects/PAPAYA/assets/workflow-presentation-preview.png",
+    "content/projects/PAPAYA/assets/mysql-visual.png",
+    "content/projects/PAPAYA/index.md",
+    "CIS 2620/1. Introduction to Automata.md",
+    "CIS 2620/2. Limits of DFAs.md",
     "Lecture-1.md",
-    "CIS 2620/1. Introduction to the Limits of Computability.md",
     "Ink/Writing/2025.5.31 - 21.13pm.writing",
     "Ink/Writing",
     "Ink",
@@ -248,12 +228,10 @@
     "Misc/Dev Days Issues.md",
     "Misc",
     "CIS 2620",
-    "content/projects/PAPAYA/assets/mysql-visual.png",
     "content/projects/Mini-Minecraft/index.md",
     "Templates/1-project-template.md",
     "Templates/2-post-template.md",
     "content/projects/PAPAYA/assets/Flattened_Asset_Layer.png",
-    "content/projects/PAPAYA/index.md",
     "content/projects/PAPAYA/assets",
     "content/projects/PAPAYA",
     "content/projects/Omniverse_ComfyUI_Plugin/index.md",
@@ -274,8 +252,6 @@
     "./content/posts/oct/oct.md",
     "content/projects/test/test.md",
     "./content/projects/a/a.md",
-    "content/projects/Diff/Diff.md",
-    "./content/projects/test/test.md",
     "content/project/MiniMaya/assets/temp.png",
     "content/project/USD-Asset-Browser/assets/Flattened_Asset_Layer.png",
     "content/blog/metamorphosis/metamorphosis.jpg",
