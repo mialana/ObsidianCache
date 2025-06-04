@@ -28,13 +28,25 @@
 \newcommand{\MyPennKey}{liuamy05}
 \newcommand{\PrintFirstHeader}{
 \begin{center}
-CIS 2620 Summer 2025 \vspace{0.5em} \hfill {\Large{\MyName}}
-\\
+CIS 2620 Summer 2025 \vspace{0.5em} \hfill {\Large{\MyName}} \\
 {\LARGE{\textbf{Homework \HomeworkNo{}}}} \vspace{0.5em} \\
 PennKey: \MyPennKey \\
 Collaborators:
 \end{center}
 }
+
+% customizations
+\newcolumntype{C}{>{$}c<{$}}
+\usetikzlibrary{automata, positioning, arrows}
+\tikzset{
+    auto,
+    on grid,
+    initial text=$ $,
+    shorten >=1pt,
+    node distance=2cm, 
+    accepting/.style={fill=red!25, double},
+}
+%%%
 
 \begin{document}
 \thispagestyle{firstpage}
