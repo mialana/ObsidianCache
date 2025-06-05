@@ -208,12 +208,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -230,7 +229,7 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "0846ea664aa0c045",
+  "active": "4e1e32900b764af7",
   "lastOpenFiles": [
     "CIS-2620/homework/hw-template.tex",
     "CIS-2620/homework/cis-2620-hw1-aliu.tex",
