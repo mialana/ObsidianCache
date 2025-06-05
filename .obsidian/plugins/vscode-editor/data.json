@@ -11,7 +11,8 @@
     "java",
     "lua",
     "php",
-    "mdx"
+    "mdx",
+    "tex"
   ],
   "folding": true,
   "lineNumbers": true,

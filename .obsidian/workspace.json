@@ -4,21 +4,41 @@
     "type": "split",
     "children": [
       {
-        "id": "07581190cc8b4c4b",
+        "id": "04f6084195f921ce",
         "type": "tabs",
         "children": [
           {
-            "id": "1f52f627556c3b1c",
+            "id": "0846ea664aa0c045",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CIS-2620/1. Introduction to Automata.md",
+                "file": "CIS-2620/3..md",
+                "mode": "source",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "3."
+            }
+          }
+        ]
+      },
+      {
+        "id": "3ad1c84433d2bca8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "678d2ea7e5674d94",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CIS-2620/3..md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1. Introduction to Automata"
+              "title": "3."
             }
           }
         ]
@@ -142,13 +162,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CIS-2620/1. Introduction to Automata.md",
+                "file": "CIS-2620/3..md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 1. Introduction to Automata"
+              "title": "Outline of 3."
             }
           },
           {
@@ -188,11 +208,12 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -209,8 +230,15 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "4e1e32900b764af7",
+  "active": "0846ea664aa0c045",
   "lastOpenFiles": [
+    "CIS-2620/homework/hw-template.tex",
+    "CIS-2620/homework/cis-2620-hw1-aliu.tex",
+    "CIS-2620/3..md",
+    "CIS-2620/2. Limits of DFAs, Benefit of NFAs.md",
+    "Ink/Writing/2025.5.31 - 21.13pm.writing",
+    "Lecture-1.md",
+    "CIS-2620/1. Introduction to Automata.md",
     "CIS-2620/homework/cis-2620-hw1-aliu.synctex(busy)",
     "CIS-2620/homework/pdflatex49298.fls",
     "CIS-2620/homework/pdflatex49152.fls",
@@ -219,17 +247,12 @@
     "CIS-2620/homework/pdflatex49070.fls",
     "CIS-2620/homework/pdflatex49042.fls",
     "CIS-2620/homework/pdflatex49003.fls",
-    "CIS-2620/homework/pdflatex48911.fls",
-    "CIS-2620/homework/pdflatex48884.fls",
-    "CIS-2620/homework/pdflatex48842.fls",
     "1. Introduction to Automata.md",
     "2. Limits of DFAs, Benefit of NFAs.md",
     "content/projects/PAPAYA/assets/workflow-presentation-preview.png",
     "content/projects/PAPAYA/assets/mysql-visual.png",
     "content/projects/PAPAYA/index.md",
-    "CIS-2620/1. Introduction to Automata.md",
     "CIS 2620/2. Limits of DFAs.md",
-    "Lecture-1.md",
     "CIS 2620/1b.canvas",
     "CIS 2620/1b..md",
     "CIS 2620/assets/dfa-lec1.png",
@@ -251,8 +274,6 @@
     "content/projects/a1/a1.md",
     "content/posts/oct/oct.md",
     "./content/projects/a1/a1.md",
-    "content/projects/a/a.md",
-    "./content/posts/oct/oct.md",
     "content/project/MiniMaya/assets/temp.png",
     "content/project/USD-Asset-Browser/assets/Flattened_Asset_Layer.png",
     "content/blog/metamorphosis/metamorphosis.jpg",

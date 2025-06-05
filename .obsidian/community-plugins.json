@@ -6,5 +6,6 @@
   "vscode-editor",
   "obsidian-latex-suite",
   "obsidian-graphviz",
-  "ink"
+  "ink",
+  "obsidian-tikzjax"
 ]
