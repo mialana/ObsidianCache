@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CIS-2620/3..md",
+                "file": "CIS 2620/3..md",
                 "mode": "source",
                 "source": true
               },
@@ -24,21 +24,17 @@
         ]
       },
       {
-        "id": "3ad1c84433d2bca8",
+        "id": "a7c85f571ae45abd",
         "type": "tabs",
         "children": [
           {
-            "id": "678d2ea7e5674d94",
+            "id": "f2101ffe4492daae",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CIS-2620/3..md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "3."
+              "title": "New tab"
             }
           }
         ]
@@ -162,13 +158,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CIS-2620/3..md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 3."
+              "title": "Outline"
             }
           },
           {
@@ -201,10 +196,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "CIS 2620/2. Limits of DFAs.md"
+                "file": "CIS 2620/3..md"
               },
               "icon": "lucide-info",
-              "title": "File properties for 2. Limits of DFAs"
+              "title": "File properties for 3."
             }
           }
         ],
@@ -231,10 +226,14 @@
   },
   "active": "4e1e32900b764af7",
   "lastOpenFiles": [
+    "Brain 2.0/Austin CodeCombat Quiz Instructions.md",
+    "Brain 2.0/Checklist.md",
+    "Brain 2.0/Summer project brainstorming.md",
+    "Brain 2.0",
+    "CIS-2620/2. Limits of DFAs, Benefit of NFAs.md",
+    "CIS-2620/3..md",
     "CIS-2620/homework/hw-template.tex",
     "CIS-2620/homework/cis-2620-hw1-aliu.tex",
-    "CIS-2620/3..md",
-    "CIS-2620/2. Limits of DFAs, Benefit of NFAs.md",
     "Ink/Writing/2025.5.31 - 21.13pm.writing",
     "Lecture-1.md",
     "CIS-2620/1. Introduction to Automata.md",
@@ -244,8 +243,6 @@
     "CIS-2620/homework/pdflatex49115.fls",
     "CIS-2620/homework/pdflatex49100.fls",
     "CIS-2620/homework/pdflatex49070.fls",
-    "CIS-2620/homework/pdflatex49042.fls",
-    "CIS-2620/homework/pdflatex49003.fls",
     "1. Introduction to Automata.md",
     "2. Limits of DFAs, Benefit of NFAs.md",
     "content/projects/PAPAYA/assets/workflow-presentation-preview.png",
@@ -271,8 +268,6 @@
     "./content/projects/East_of_Eden/East_of_Eden.md",
     "./content/projects/GOF/GOF.md",
     "content/projects/a1/a1.md",
-    "content/posts/oct/oct.md",
-    "./content/projects/a1/a1.md",
     "content/project/MiniMaya/assets/temp.png",
     "content/project/USD-Asset-Browser/assets/Flattened_Asset_Layer.png",
     "content/blog/metamorphosis/metamorphosis.jpg",
